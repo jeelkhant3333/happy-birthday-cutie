@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ek Ladki Thi... Jo Har Baat Pe Nahi Kehti Thi ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Nunito:wght@400;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#151027;--lav:#7454A5;--pink:#F3A6C8;--gold:#F4D6A0;--ivory:#FFF5F9;--card:#241a40;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:inherit}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ivory);font-family:Nunito,system-ui,sans-serif;font-size:18px;overflow-x:hidden}
+body{background:radial-gradient(circle at 50% 0,#3a2468,var(--bg) 60%) fixed}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;margin:.3em 0}
+h2{font-size:1.7rem;color:var(--gold);text-align:center}
+button{font:inherit;color:inherit;cursor:pointer;min-height:48px;padding:.6em 1.2em;border-radius:999px;border:2px solid var(--gold);background:linear-gradient(135deg,var(--lav),#9a4f8f);box-shadow:0 4px 14px #0006}
+button:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+button.ghost{background:transparent}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#151027ee;padding:.5rem .8rem;display:flex;gap:.5rem;align-items:center}
+header .bar{flex:1;height:8px;background:#ffffff22;border-radius:9px;overflow:hidden}header .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pink),var(--gold));transition:width .5s}
+header button{min-height:44px;padding:.3em .8em}
+#menu{display:none;flex-wrap:wrap;gap:.4rem;padding:.5rem .8rem;background:#1d1535;justify-content:center}#menu.on{display:flex}
+#menu button{min-height:44px;min-width:44px;padding:.2em .6em}#menu button:disabled{opacity:.35}
+main{max-width:720px;margin:0 auto;padding:1rem 1rem 6rem;text-align:center}
+footer{position:fixed;left:0;right:0;bottom:0;padding:.5rem .8rem calc(.5rem + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;background:#151027ee;z-index:20}
+.card{background:var(--card);border:1px solid #f4d6a066;border-radius:18px;padding:1rem;margin:.6rem 0}
+.row{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.6rem}
+.big{font-size:clamp(3rem,16vw,6rem);font-family:'Playfair Display',serif;color:var(--pink);text-shadow:0 0 25px var(--pink)}
+.fade{opacity:0;animation:in .8s forwards}@keyframes in{to{opacity:1;transform:none}}.fade{transform:translateY(12px)}
+.pop{animation:pop .5s}@keyframes pop{0%{transform:scale(.7);opacity:0}100%{transform:scale(1);opacity:1}}
+.hearts span{position:fixed;bottom:-30px;animation:rise linear infinite;pointer-events:none;z-index:1;opacity:.6}
+@keyframes rise{to{transform:translateY(-110vh) rotate(20deg)}}
+.bubble{max-width:80%;padding:.6em .9em;border-radius:16px;margin:.4rem 0;text-align:left}
+.me{background:var(--lav);margin-left:auto;border-bottom-right-radius:4px}.her{background:#fff2;border-bottom-left-radius:4px}
+.cap{font-size:.9rem;color:var(--gold);margin:.1rem 0 .6rem}
+.date{font-size:1.3rem;padding:1em 1.4em}
+.polaroid{perspective:800px;background:none;border:0;box-shadow:none;padding:0;min-height:260px;width:100%}
+.polaroid .in{position:relative;width:100%;height:260px;transition:transform .7s;transform-style:preserve-3d}
+.polaroid.flip .in{transform:rotateY(180deg)}
+.polaroid .f,.polaroid .b{position:absolute;inset:0;backface-visibility:hidden;background:var(--ivory);color:#3a2468;border-radius:6px;padding:10px;display:flex;flex-direction:column;box-shadow:0 6px 18px #0008}
+.polaroid .b{transform:rotateY(180deg);justify-content:center;font-family:Caveat,cursive;font-size:1.3rem}
+.empty{flex:1;border:2px dashed var(--pink);background:#f3a6c822;display:flex;align-items:center;justify-content:center;font-size:2rem;border-radius:3px}
+.polaroid small{font-size:.8rem;padding-top:.4rem}
+.sky{position:relative;height:300px;margin:1rem auto;max-width:360px}.sky svg{position:absolute;inset:0;width:100%;height:100%}
+.star{position:absolute;transform:translate(-50%,-50%);min-height:44px;min-width:44px;padding:0;border-radius:50%;background:none;border:0;box-shadow:none;font-size:1.6rem;filter:drop-shadow(0 0 6px var(--gold))}
+.star.on{filter:drop-shadow(0 0 10px var(--pink))}
+.trophy{font-size:7rem;background:none;border:0;box-shadow:none;filter:drop-shadow(0 0 25px var(--gold))}
+.curtain{position:fixed;top:0;bottom:0;width:50%;background:repeating-linear-gradient(90deg,#4a1d6e,#6b2f94 14px,#4a1d6e 28px);z-index:15;transition:transform 1.2s}
+.curtain.l{left:0}.curtain.r{right:0}.open .l{transform:translateX(-100%)}.open .r{transform:translateX(100%)}
+.env{font-size:1rem;background:#f4d6a0;color:#5a3a2a;font-family:Caveat,cursive;font-size:1.6rem;padding:2rem 1rem;border-radius:10px;border:0}
+.paper{background:#fff8ee;color:#3b2a2a;font-family:Caveat,cursive;font-size:1.45rem;line-height:1.45;text-align:left;padding:1.2rem;border-radius:6px;box-shadow:0 8px 30px #000a}
+.paper p{margin:.8em 0}
+.conf{position:fixed;top:-30px;z-index:50;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.heartbtn{font-size:6rem;background:none;border:0;box-shadow:none;animation:beat 1.2s infinite;filter:drop-shadow(0 0 20px var(--pink))}@keyframes beat{50%{transform:scale(1.12)}}
+#resume{position:fixed;inset:0;background:#000d;z-index:60;display:none;align-items:center;justify-content:center;padding:1rem}#resume.on{display:flex}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}.hearts{display:none}}
+</style></head><body>
+<header><div class="bar" role="progressbar" aria-label="Story progress"><i id="pb"></i></div><span id="pt" aria-live="polite">1/10</span>
+<button id="mn" class="ghost" aria-label="Chapter menu">☰</button><button id="snd" class="ghost" aria-label="Toggle sound" aria-pressed="false">🔇</button></header>
+<nav id="menu" aria-label="Chapters"></nav>
+<div class="hearts" aria-hidden="true" id="hearts"></div>
+<main id="stage" tabindex="-1"></main>
+<footer><button id="prev" class="ghost">← Back</button><button id="next">Next →</button></footer>
+<div id="resume" role="dialog" aria-label="Resume"><div class="card"><h2>Welcome back ❤️</h2><div class="row"><button id="rs">Resume</button><button id="st" class="ghost">Start Again</button></div></div></div>
+<script>
+const NAV_KEY='project-devyani-v1';
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const $=s=>document.querySelector(s);
+let S={cur:0,max:0,muted:true};
+try{Object.assign(S,JSON.parse(localStorage.getItem(NAV_KEY)||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem(NAV_KEY,JSON.stringify(S))}catch(e){}};
+/* audio: tiny original synthesized chimes, optional */
+let ac;function chime(n=[660,880,1100]){if(S.muted)return;try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();n.forEach((f,i)=>{const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=f;o.type='sine';o.connect(g);g.connect(ac.destination);const t=ac.currentTime+i*.12;g.gain.setValueAtTime(.08,t);g.gain.exponentialRampToValueAtTime(.001,t+.5);o.start(t);o.stop(t+.5)})}catch(e){}}
+function confetti(n=40){if(reduce)return;const e=['❤️','✨','🎉','💖','🌸'];for(let i=0;i<n;i++){const s=document.createElement('span');s.className='conf';s.textContent=e[i%5];s.style.left=Math.random()*100+'vw';s.style.animationDuration=2+Math.random()*2+'s';document.body.append(s);setTimeout(()=>s.remove(),4200)}}
+/* data */
+const NICK=['Cutie','Bhindi','Fulzadi','Setting'];
+const BENEFITS=['Unlimited Care & Attention','Premium Flirting Subscription','Lifetime Funny Stories','Sorry-Before-Argument Service','Professional Self-Appreciation','Emotional Support — 24/7','Cricket Champion Bonus'];
+const NAHI_REPLIES=['Madam, ek baar features toh padh lo!','Offer reject karne ka reason?','Sales department is crying. 😭','Please escalate to the relationship manager.'];
+const DATES=[['December','Devyani: “December mein dekhte hain.”'],['15 November','Me: “Kal?” … Devyani: “15 November.”'],['25 October','Me: “Next Sunday, 25 October?” Devyani: “Dekhenge...”']];
+const CHAT=[['Call karu?','Internet slow hai ya madam ka mood?'],['Photo bhejogi?','Robot mode activated. 🤖'],['Milne aau?','Reply length: 4 letters.'],['I love you?','Emotional damage... temporarily.'],['Teri life se chala jau?','Good. Kahin nahi jaa raha ❤️']];
+const FRAMES=[['The Legendary Selfie','Madam claims photo inventory is zero.'],['That Beautiful Smile','Smile exists. Evidence unavailable.'],['The Famous Hairstyle','Hair appreciation department is waiting.']];
+const STARS=[['Her voice','Tumhari awaaz sunke ordinary din bhi special lagta hai.'],['Her smile','Tumhari smile meri favourite notification hai.'],['Her hair','Haan, tumhare baalon ka bhi alag fan club hai. President: Main.'],['Her understanding','Tum mujhe samajhti ho, aur mere liye woh bahut special hai.'],['Her caring nature','Tumhara care karne ka tareeka mujhe hamesha loved feel karata hai.'],['Her funny side','Teri nautanki ke bina meri comedy show bilkul bore hota.'],['Her strength','Tum strong aur independent ho, aur main usse dil se respect karta hoon.'],['Her emotional side','Tumhare emotions mere liye bahut precious hain. Main hamesha sunne ke liye hoon.'],['Her romantic side','Kabhi kabhi shy ho, par tumhara pyaar mujhe har baar mehsoos hota hai.'],['Her cheerful personality','Tum jahan ho, wahan mood automatically achha ho jata hai.']];
+const POS=[[70,75],[115,55],[150,90],[190,55],[235,75],[250,125],[205,185],[150,235],[95,185],[50,125]];
+const YES_STEPS=['Sunday, 25 October 2026','Ek conversation...','30–35 minutes...','Bahut saari baatein...','Aur phir...'];
+const LETTER=["To my Cutie, Bhindi, Fulzadi, Setting... ❤️","Happy Birthday, meri pyaari Devyani! ❤️","Sabse pehle toh congratulations, tumne ek aur saal successfully complete kar liya... aur sabse badi achievement, tumhe mere jaisa itna amazing boyfriend mil gaya. 😂","I know, I know... abhi bhi tumhara reply \"nahi\" hi hoga.","But jokes apart, baby...","You came into my life, and somehow everything became a little more beautiful. Your voice, your smile, your beautiful hair, your funny little reactions, your caring nature... I love every little thing about you.","Tumhe pata hai, Navratri mein main kitne confidence se aaya tha ki aaj toh madam YES bol hi degi. Aur wahan main apni hi marketing karta reh gaya. 😂","Then December, November 15, October 25... kitni negotiations karni padi!","But 25 October 2026 will always be special to me. Because that day, after so many conversations and so many \"nahi,\" you finally said yes.","And you know what? I would choose you again, every single time.","You made my 2026 memorable, baby. You brought happiness into my life, and I hope I've brought that same smile into yours.","I don't know exactly what the future has planned for us. But I know what I want: to keep loving you, supporting you, understanding you, and working hard enough to build a beautiful future together.","I want to become someone who makes you proud, and someone your parents can trust with your happiness.","And whatever happens, I want you to remember that you are loved, appreciated, and incredibly special to me.","Please keep smiling, meri fulzadi. That smile is one of my favorite things in this world.","Aur haan, birthday gift mein bas ek chhoti si request...","Kabhi kabhi \"nahi\" ke alawa bhi kuch bol diya karo. 😂❤️","Happy Birthday, meri jaan.","I love you. ❤️","— Your self-proclaimed best boyfriend"];
+/* chapters */
+const go=n=>{S.cur=Math.max(0,Math.min(9,n));S.max=Math.max(S.max,S.cur);save();render()};
+const CH=[
+{t:'Entry',v:()=>`<div class="curtain l"></div><div class="curtain r"></div><div id="intro" style="position:relative;z-index:16;min-height:70vh">
+<p class="serif fade" style="font-size:2rem;animation-delay:.2s">Ek ladki thi...</p>
+${['Jo cute bhi thi...','Thodi nautanki bhi...','Thodi si drama queen...','Aur har baat pe kehti thi...'].map((l,i)=>`<p class="fade" style="animation-delay:${.8+i*.7}s">${l}</p>`).join('')}
+<div class="big fade" style="animation-delay:3.8s">NAHI! 😂</div>
+<p class="fade" style="animation-delay:4.4s">Presenting... the one and only...</p>
+<h1 class="fade" style="animation-delay:5s;color:var(--gold);font-size:2.6rem">DEVYANI ❤️</h1>
+<p class="fade" style="animation-delay:5.4s;color:var(--pink)">${NICK.join(' • ')}</p>
+<p class="serif fade" style="animation-delay:5.8s;font-size:1.4rem">Happy Birthday, meri favourite heroine!</p>
+<div class="row"><button id="enter">Main Character Ki Entry ✨</button></div></div>`,
+ b:r=>{r.querySelector('#enter').onclick=()=>{chime();document.body.classList.add('open');r.querySelectorAll('.curtain').forEach(c=>c.style.zIndex=15);confetti(20);setTimeout(()=>{document.body.classList.remove('open');go(1)},1300)}}},
+{t:'Sales Pitch',v:()=>`<h2>World's Most Difficult Sales Deal</h2><p>Product: One Extremely Amazing Boyfriend</p>
+<div style="font-size:3rem" aria-hidden="true">🧑‍💼📊 &nbsp; 🙍‍♀️🤔</div>
+<div class="grid">${BENEFITS.map((b,i)=>`<div class="card">${['💞','😘','📖','🙏','🪞','🫂','🏆'][i]}<br>${b}</div>`).join('')}</div>
+<p class="cap">“Madam, market mein aisa premium package dobara nahi milega!”<br>“Lifetime support included. Terms and conditions: unlimited pyaar.”<br>“Customer satisfaction guaranteed... bas customer YES toh bole!”</p>
+<p class="cap">🎵 “Mere jeevan ke galle mein tu hi to dhan hai”</p>
+<div class="row"><button id="ap">Approve ❤️</button><button id="no" class="ghost">Nahi 🙄</button></div><p id="res" role="status" class="serif" style="min-height:3em"></p>`,
+ b:r=>{let k=0;r.querySelector('#ap').onclick=()=>{r.querySelector('#res').textContent='Deal closed! Sales department is dancing 🕺';confetti(30);chime()};
+ r.querySelector('#no').onclick=()=>{r.querySelector('#res').textContent=NAHI_REPLIES[k%4]+(k>=3?' (Okay okay, aage chalte hain →)':'');k++}}},
+{t:'Dates',v:()=>`<h2>The Great Date Negotiation</h2><p class="cap">Negotiation level: EXPERT 😎</p><p>Tap each date:</p>
+<div class="row">${DATES.map((d,i)=>`<button class="date" data-i="${i}">📅 ${d[0]}</button>`).join('')}</div><div id="dl"></div><p id="hd" class="serif" style="color:var(--gold)"></p>
+<div class="row"><button id="inv" class="ghost">Continue the Investigation 🔍</button></div>`,
+ b:r=>{const seen=new Set();r.querySelectorAll('.date').forEach(b=>b.onclick=()=>{const i=+b.dataset.i;seen.add(i);r.querySelector('#dl').innerHTML=`<div class="card pop">${DATES[i][1]}</div>`;chime([500+i*100]);if(seen.size==3)r.querySelector('#hd').textContent='December → November 15 → October 25. Historic decision pending...'});r.querySelector('#inv').onclick=()=>go(3)}},
+{t:'Nahi Simulator',v:()=>`<h2>Nahi Simulator</h2><button id="big" class="big" style="background:none;border:0;box-shadow:none" aria-label="NAHI">NAHI 😂</button>
+<div id="egg" class="card pop" hidden>Tumhari dictionary ka favourite word NAHI hai...<br>par mera favourite word woh YES hai jo tumne 25 October ko bola tha. ❤️</div>
+<div id="chat" aria-live="polite" style="min-height:200px"></div>
+<div class="row"><button id="tap">Tap to chat 💬</button><button id="skip" class="ghost">Skip</button></div>`,
+ b:r=>{let i=0,n=0;r.querySelector('#big').onclick=()=>{if(++n>=5){r.querySelector('#egg').hidden=false;confetti(25)}};
+ r.querySelector('#tap').onclick=e=>{if(i>=5){go(4);return}const c=CHAT[i++];r.querySelector('#chat').insertAdjacentHTML('beforeend',`<div class="bubble me pop">${c[0]}</div><div class="bubble her pop">NAHI 😂</div><p class="cap">${c[1]}</p>`);chime([440]);if(i>=5)e.target.textContent='Next chapter →'};
+ r.querySelector('#skip').onclick=()=>go(4)}},
+{t:'Photo Museum',v:()=>`<h2>Devyani's Extremely Exclusive Photo Gallery</h2><p>Tap a frame ✨</p>
+<div class="grid">${FRAMES.map((f,i)=>`<button class="polaroid" data-i="${i}" aria-label="${f[0]}, tap to flip"><div class="in"><div class="f"><div class="empty" aria-hidden="true">🌸</div><small>${f[0]}<br>Photo unavailable — request rejected.</small></div><div class="b">${f[1]}</div></div></button>`).join('')}
+<button class="polaroid" data-i="3" aria-label="Our Future Photo, tap to flip"><div class="in"><div class="f"><div class="empty" style="font-size:4rem;filter:drop-shadow(0 0 10px #f3a6c8)" aria-hidden="true">💖</div><small>Our Future Photo<br>Reserved for a memory we'll make someday.</small></div><div class="b">Some pictures are worth waiting for. ❤️</div></div></button></div>
+<p class="serif" style="margin-top:1.2rem">Photos nahi hain toh kya hua?<br>Meri favourite picture toh waise bhi mere dil mein hai. ❤️</p>`,
+ b:r=>r.querySelectorAll('.polaroid').forEach(p=>p.onclick=()=>{p.classList.toggle('flip');chime([700])})},
+{t:'Lady Luck',v:()=>`<h2>🏅 Achievement Unlocked!</h2><div class="card pop">25 October: Girlfriend YES ❤️</div><div class="card">Next Achievement: First Cricket Tournament Won 🏆</div>
+<p class="cap">Coincidence? I think not.</p><h3 class="serif" style="color:var(--pink)">Lady Luck: Devyani</h3><button class="trophy" id="tr" aria-label="Tap the trophy">🏆</button><div id="tm" role="status"></div>`,
+ b:r=>r.querySelector('#tr').onclick=()=>{r.querySelector('#tm').innerHTML='<div class="card pop">Baby, tumhare aane se sirf cricket nahi,<br>meri poori life thodi aur beautiful ho gayi.</div><p class="serif" style="color:var(--gold)">You made my 2026 unforgettable.</p>';confetti(35);chime()}},
+{t:'Constellation',v:()=>`<h2>Little Things I Love About You</h2><p>🌙 Tap the stars</p>
+<div class="sky"><svg viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true"><polygon points="${POS.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#F4D6A088" stroke-width="1.5"/></svg>
+${POS.map((p,i)=>`<button class="star" data-i="${i}" style="left:${p[0]/3}%;top:${p[1]/3}%" aria-label="${STARS[i][0]}">⭐</button>`).join('')}
+<button class="star" data-i="10" style="left:50%;top:47%;font-size:2rem" aria-label="My Lady Luck">💖</button></div>
+<div id="sm" role="status" style="min-height:110px"></div>`,
+ b:r=>r.querySelectorAll('.star').forEach(s=>s.onclick=()=>{const i=+s.dataset.i;s.classList.add('on');r.querySelector('#sm').innerHTML=`<div class="card pop"><b style="color:var(--gold)">${i==10?'MY LADY LUCK ❤️':STARS[i][0]}</b><br>${i==10?'Tum meri har cheez mein lucky charm ho.':STARS[i][1]}</div>`;chime([600+i*40])})},
+{t:'The Yes',v:()=>`<div class="card" style="font-size:2.4rem;color:var(--gold)">📅 OCT <b>25</b> · 2026</div><div id="ys" style="min-height:240px" role="status"></div><div class="row"><button id="adv">Tap to continue →</button></div>`,
+ b:r=>{let i=0;const el=r.querySelector('#ys'),a=r.querySelector('#adv');a.onclick=()=>{if(i<5){el.innerHTML=`<p class="serif pop" style="font-size:1.7rem">${YES_STEPS[i]}</p>`;i++;chime([500]);if(i==5)a.textContent='Reveal... 💫'}
+ else if(i==5){i++;el.innerHTML=`<div class="big pop">YES ❤️</div><p>After all those conversations,<br>you finally said yes.</p><p>And that one little word became<br>one of my favourite memories.</p><p class="serif" style="color:var(--gold)">Thank you for choosing us, Cutie.</p>`;confetti(70);chime([523,659,784,1046]);a.textContent='One Last Thing, Baby... 💌'}else go(8)}}},
+{t:'Letter',v:()=>`<h2>A Letter For You</h2><div id="lt"><div class="row"><button class="env" id="ev" aria-label="Open the envelope">💌 To My Cutie, Bhindi, Fulzadi, Setting ❤️<br><small>(tap to open)</small></button></div></div>`,
+ b:r=>r.querySelector('#ev').onclick=()=>{chime([523,784]);r.querySelector('#lt').innerHTML=`<article class="paper pop">${LETTER.map(p=>`<p>${p}</p>`).join('')}</article><div class="row"><button id="fin">Grand Finale 🎆</button></div>`;r.querySelector('#fin').onclick=()=>go(9)}},
+{t:'Finale',v:()=>`<p aria-hidden="true" style="font-size:2rem">🎆✨🎇</p><h1 class="big pop" style="font-size:clamp(2rem,10vw,4rem)">HAPPY BIRTHDAY<br>DEVYANI ❤️</h1><p class="serif" style="font-size:1.3rem;color:var(--gold)">My Cutie.<br>My Bhindi.<br>My Fulzadi.<br>My Setting.<br>My Lady Luck.</p>
+<p>You made my 2026 beautiful.<br>I hope I can make every birthday of yours<br>a little more magical.</p><p class="serif" style="font-size:1.6rem">I Love You ❤️</p>
+<button class="heartbtn" id="hb" aria-label="Tap for confetti">❤️</button>
+<div class="row"><button id="rl">Read My Letter Again 💌</button><button id="rp" class="ghost">Replay Our Story ✨</button></div>
+<p class="cap">Made with endless love, just for Devyani.</p><p class="cap">🎵 Soundtrack in my heart: Mere Piya Ghar Aaya · Ye Tune Kya Kiya · Teri Nazron Ke Sadqe</p>`,
+ b:r=>{confetti(60);r.querySelector('#hb').onclick=()=>{confetti(60);chime([523,659,784])};r.querySelector('#rl').onclick=()=>go(8);r.querySelector('#rp').onclick=()=>go(0)}}
+];
+function render(){const c=CH[S.cur],st=$('#stage');st.innerHTML=c.v();c.b(st);st.focus({preventScroll:true});scrollTo(0,0);
+ $('#pb').style.width=(S.cur+1)*10+'%';$('#pt').textContent=(S.cur+1)+'/10';$('#prev').disabled=S.cur==0;$('#next').disabled=S.cur==9;
+ $('#menu').innerHTML=CH.map((x,i)=>`<button ${i>S.max?'disabled':''} data-i="${i}" aria-label="Chapter ${i+1}: ${x.t}" ${i==S.cur?'aria-current="true"':''}>${i+1}</button>`).join('');
+ $('#menu').querySelectorAll('button').forEach(b=>b.onclick=()=>{$('#menu').classList.remove('on');go(+b.dataset.i)})}
+$('#prev').onclick=()=>go(S.cur-1);$('#next').onclick=()=>go(S.cur+1);$('#mn').onclick=()=>$('#menu').classList.toggle('on');
+const sndUI=()=>{$('#snd').textContent=S.muted?'🔇':'🔊';$('#snd').setAttribute('aria-pressed',!S.muted)};
+$('#snd').onclick=()=>{S.muted=!S.muted;save();sndUI();chime([660])};sndUI();
+if(!reduce){const h=$('#hearts');for(let i=0;i<8;i++){const s=document.createElement('span');s.textContent=['❤️','💗','✨'][i%3];s.style.left=Math.random()*95+'%';s.style.animationDuration=9+Math.random()*8+'s';s.style.animationDelay=-Math.random()*10+'s';h.append(s)}}
+if(S.cur>0){$('#resume').classList.add('on');$('#rs').onclick=()=>{$('#resume').classList.remove('on');render()};$('#st').onclick=()=>{S.cur=0;save();$('#resume').classList.remove('on');render()};$('#rs').focus()}
+render();
+</script></body></html>
